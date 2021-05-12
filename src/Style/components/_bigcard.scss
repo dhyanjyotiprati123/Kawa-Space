@@ -1,0 +1,39 @@
+
+.bigcard{
+    width: 60rem;
+    margin: auto;
+    background: $white-4;
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+    border-radius: 3rem;
+    justify-content: space-between;
+    box-shadow: 0 .5rem 1rem -1rem rgba(0,0,0, .15);
+
+
+    &-profile{
+        margin-right: 2rem;
+       &-pic{
+           border-radius: 50%;
+       }
+    }
+    &-bio{
+         width: 60%;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+    }
+    &-name{
+       font-size: 2.5rem;
+       color: $primary-color;
+    }
+    &-address{
+        font-size: 1.35rem;
+        text-transform: capitalize;
+        margin: 1rem 0;
+    }
+    &-gender{
+        font-size: 1.2rem;
+        text-transform: capitalize;
+    }
+}

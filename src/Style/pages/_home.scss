@@ -1,0 +1,27 @@
+
+.home{
+    width: 85%;
+    margin: 0 auto;
+    background: $white-2;
+    min-height: 90vh;
+    border: 1px solid $white-4;
+
+    @include media-response(tablet){
+        width: 100%;
+    }
+
+    &-inner{
+        width: 100%;
+        padding: 5rem;
+    }
+    &-allcards{
+        padding: 4rem 3rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        @include media-response(phone-big){
+            justify-content: center;
+        }
+    }
+}

@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    padding: 5vh 0;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    font-family:  'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    background: linear-gradient(to right top, $pink-light, $cyan-light );
+    color: $blue-dark;
+    -webkit-tap-highlight-color:transparent;
+
+    @include media-response(tablet){
+        padding: 0;
+    }
+
+    &::before{
+        content: "";
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: $green-yellow;
+        z-index: -1;
+        opacity: .16;
+    }
+}
+
+html{
+    font-size: 62.5%;
+
+    @include media-response(large){
+        font-size: 55%;
+    }
+    @include media-response(tablet-port){
+        font-size: 50%;
+    }
+    @include media-response(phone-big){
+        font-size: 47%;
+    }
+    @include media-response(phone){
+        font-size: 42%;
+    }
+    @include media-response(phone-small){
+        font-size: 38%;
+    }
+}

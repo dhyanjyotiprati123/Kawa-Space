@@ -1,0 +1,21 @@
+
+.smallcard{
+    padding: 1rem;
+    background: $white-4;
+    border-radius: 1rem;
+    width: 30rem;
+    margin: 3rem 1rem;
+
+    &-para{
+      font-size: 1.2rem;
+      text-transform: capitalize;
+    }
+    &-name{
+       font-size: 2rem;
+       text-transform: capitalize;
+    }
+    &-email{
+        font-size: 1.1rem;
+        color: $primary-color;
+    }
+}

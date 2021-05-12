@@ -1,0 +1,26 @@
+
+@mixin media-response($breakpoint) {
+
+    @if $breakpoint== very-large{
+        @media only screen and(max-width: 1600px){@content}
+    }
+    @if $breakpoint== large{
+        @media only screen and(max-width: 1000px){@content}
+    }
+    @if $breakpoint== tablet{
+        @media only screen and(max-width: 900px){@content}
+    }
+    @if $breakpoint== tablet-port{
+        @media only screen and(max-width: 768px){@content}
+    }
+    @if $breakpoint== phone-big{
+        @media only screen and(max-width: 650px){@content}
+    }
+    @if $breakpoint== phone{
+        @media only screen and(max-width: 600px){@content}
+    }
+    @if $breakpoint== phone-small{
+        @media only screen and(max-width: 500px){@content}
+    }
+    
+}

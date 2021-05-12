@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  padding: 5vh 0;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  background: -webkit-gradient(linear, left bottom, right top, from(#efa2b4), to(#aef1ee));
+  background: linear-gradient(to right top, #efa2b4, #aef1ee);
+  color: #18293c;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    padding: 0;
+  }
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #cddc39;
+  z-index: -1;
+  opacity: .16;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media only screen and (max-width: 1000px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  html {
+    font-size: 47%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 42%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 38%;
+  }
+}
+
+.navbar {
+  width: 100%;
+}
+
+.navbar-inner {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar-logo-heading {
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+.navbar-list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media only screen and (max-width: 1600px) {
+  .navbar-list {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 60%;
+            flex: 0 0 60%;
+  }
+}
+
+.navbar-list-item {
+  font-size: 1.6rem;
+  color: #18293c;
+  text-transform: uppercase;
+}
+
+.bigcard {
+  width: 60rem;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem;
+  border-radius: 3rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: 0 0.5rem 1rem -1rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0.5rem 1rem -1rem rgba(0, 0, 0, 0.15);
+}
+
+.bigcard-profile {
+  margin-right: 2rem;
+}
+
+.bigcard-profile-pic {
+  border-radius: 50%;
+}
+
+.bigcard-bio {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bigcard-name {
+  font-size: 2.5rem;
+  color: #e02f6b;
+}
+
+.bigcard-address {
+  font-size: 1.35rem;
+  text-transform: capitalize;
+  margin: 1rem 0;
+}
+
+.bigcard-gender {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
+.smallcard {
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 1rem;
+  width: 30rem;
+  margin: 3rem 1rem;
+}
+
+.smallcard-para {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
+.smallcard-name {
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+.smallcard-email {
+  font-size: 1.1rem;
+  color: #e02f6b;
+}
+
+.home {
+  width: 85%;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.2);
+  min-height: 90vh;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+@media only screen and (max-width: 900px) {
+  .home {
+    width: 100%;
+  }
+}
+
+.home-inner {
+  width: 100%;
+  padding: 5rem;
+}
+
+.home-allcards {
+  padding: 4rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 650px) {
+  .home-allcards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.active {
+  color: #e02f6b;
+  border-bottom: 2px solid #e02f6b;
+}
+/*# sourceMappingURL=main.css.map */
